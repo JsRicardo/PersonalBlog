@@ -1,0 +1,41 @@
+.posterSlide {
+  height: 100%;
+  overflow: hidden;
+}
+
+.posterSlide img {
+  width: 100%;
+}
+
+.posterSlideDots {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.posterSlideDots li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.posterSlideDots li:last-of-type {
+  margin-right: 0;
+}
+
+.posterSlideDots li::after {
+  content: '';
+  display: block;
+  height: 8px;
+  width: 8px;
+  background-color: rgba(255, 255, 255, .6);
+}
+
+.posterSlideDots li.slick-active::after {
+  background-color: #fff;
+}
+
+.posterSlideDots li button {
+  display: none;
+}

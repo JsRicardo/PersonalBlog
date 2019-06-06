@@ -1,0 +1,16 @@
+@import url(~slick-carousel/slick/slick.css);
+@import url(~slick-carousel/slick/slick-theme.css);
+.home {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+  width: 1190px;
+  margin: 0 auto; }
+  .home .main {
+    width: 66%;
+    overflow: hidden; }
+    .home .main__banner {
+      width: 100%;
+      position: relative; }
+    .home .main__blogs {
+      margin-top: 20px; }
