@@ -1,0 +1,21 @@
+.typeWrapper{
+  width: 100%;
+}
+.typeWrapper:not(:first-of-type){
+  margin-top: 40px;
+}
+.typeWrapper__title{
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.typeWrapper__line{
+  height: 0;
+  width: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  transition: all .5s ease;
+}
+.typeWrapper:hover .typeWrapper__line{
+  width: 80px;
+}

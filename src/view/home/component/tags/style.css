@@ -1,0 +1,17 @@
+.tags {
+  width: 100%; }
+  .tags button {
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 20px;
+    min-width: 60px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .5s ease; }
+    .tags button:hover {
+      border-radius: 0; }
+    .tags button:not(:first-of-type) {
+      margin-left: 10px; }
