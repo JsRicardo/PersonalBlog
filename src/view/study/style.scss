@@ -1,3 +1,10 @@
-* {
-  color: black;
+.study{
+  padding-top: 60px;
+  width: 100%;
+  &__articleBar{
+    width: 66%;
+  }
+  &__asside{
+    width: 32%;
+  }
 }

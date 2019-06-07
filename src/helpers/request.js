@@ -1,21 +1,39 @@
-export default async function (path, opt) {
-  const url = 'https://www.easy-mock.com/mock/5a964cffdd997801d1e291fe/movie' + path;
-  const options = Object.assign({
-    method: 'GET',
-  }, opt);
+// export default async function (path, opt) {
+//   const url = 'https://www.easy-mock.com/mock/5cfa472b40971927560c5d71/blog/' + path
+//   const options = Object.assign({
+//     method: 'GET',
+//   }, opt)
 
-  try {
-    const response = await fetch(url, options);
-    const { data, status } = await response.json();
+//   try {
+//     const response = await fetch(url, options)
+//     const { data, code } = await response.json()
 
-    if (status === 0) {
-      return data;
-    } else {
-      // 错误处理
-    }
-  } catch (e) {
-    // 错误处理
-    // 提示/弹窗
-  }
+//     if (code === '0') {
+//       return data
+//     } else {
+//       // console.log(code)
+//     }
+//   }
+//   catch (e) {
+//     // console.log(e)
+//   }
+// }
 
+import axios from 'axios'
+
+export default function (path, callback) {
+  const url = 'https://www.easy-mock.com/mock/5cfa472b40971927560c5d71/blog/' + path
+  axios.get(url)
+    .then((response) => {
+      const { data, status } = response
+      const result = data.data
+      if (status === 200) {
+        callback(result)
+      } else {
+        console.log('Fail')
+      }
+    })
+    .catch((err) => {
+      console.log('Fail!', err)
+    })
 }

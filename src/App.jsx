@@ -31,6 +31,9 @@ class App extends React.Component {
                 <Redirect to='/err'></Redirect>
               </Switch>
             </div>
+            <div className="page__bottom">
+            ©Copyright Powered By Ricardo -- Ricardo 的个人博客 
+            </div>
           </div>
         </Router>
       </div>

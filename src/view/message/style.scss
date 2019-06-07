@@ -1,3 +1,10 @@
-* {
-  color: black;
+.message{
+  padding-top: 60px;
+  width: 100%;
+  .messageWrapper{
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 }

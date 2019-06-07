@@ -21,15 +21,24 @@
       margin-top: 20px;
     }
   }
-  .asside{
+
+  .asside {
     width: 32%;
-    .topicWrapper{
-      height: 471px;
-      width: 100%
+
+    .topicWrapper {
+      height: 437px;
+      width: 100%;
+      background-color: #fff;
     }
-    .articleLink{
+
+    .articleLinkWrapper {
       margin-top: 20px;
       width: 100%;
     }
+  }
+  &__pagination{
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
   }
 }

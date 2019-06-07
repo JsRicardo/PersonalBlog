@@ -1,0 +1,18 @@
+.tohome{
+  background-color: #000;
+  color: #fff;
+}
+.thisPage{
+  background-color: #3a6ab5;
+  color: #fff;
+}
+.linkBtn{
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+.linkBtn:hover{
+  color: #00A7EB;
+}

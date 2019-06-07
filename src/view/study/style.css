@@ -1,2 +1,7 @@
-* {
-  color: black; }
+.study {
+  padding-top: 60px;
+  width: 100%; }
+  .study__articleBar {
+    width: 66%; }
+  .study__asside {
+    width: 32%; }

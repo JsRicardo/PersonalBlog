@@ -1,3 +1,27 @@
 body {
   background-color: #f6f6f6;
 }
+
+.page__bottom {
+  margin-top: 40px;
+  font-size: 12px;
+  height: 60px;
+  line-height: 60px;
+  background-color: rgba(0, 0, 0, .8);
+  color: #fff;
+  text-align: center;
+}
+
+.main {
+  width: 66%;
+}
+
+.asside {
+  width: 32%;
+}
+.mainWrapper {
+  width: 1190px;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,3 +1,15 @@
-* {
-  color: black;
+.about {
+  padding-top: 60px;
+  width: 100%;
+  &__knowMe{
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 22px;
+    font-size: 16px;
+    text-indent:34px;
+    letter-spacing: 1px;
+    color: #555;
+  }
 }
