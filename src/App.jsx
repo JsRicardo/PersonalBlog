@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
+import { Provider } from 'react-redux'
 
 import Home from './view/home/Home'
 import About from './view/about/About'
@@ -8,6 +9,8 @@ import Message from './view/message/Message'
 import Study from './view/study/Study'
 import Err from './view/Err'
 import Nav from './component/Nav/Nav'
+
+import store from './redux/store'
 
 import './app.css'
 
@@ -21,18 +24,20 @@ class App extends React.Component {
               <Nav></Nav>
             </div>
             <div className="content">
-              <Switch>
-                <Route path='/' exact component={Home}></Route>
-                <Route path='/about' exact component={About}></Route>
-                <Route path='/life' exact component={Life}></Route>
-                <Route path='/message' exact component={Message}></Route>
-                <Route path='/study' exact component={Study}></Route>
-                <Route path='/err' component={Err}></Route>
-                <Redirect to='/err'></Redirect>
-              </Switch>
+              <Provider store={store}>
+                <Switch>
+                  <Route path='/' exact component={Home}></Route>
+                  <Route path='/about' exact component={About}></Route>
+                  <Route path='/life' exact component={Life}></Route>
+                  <Route path='/message' exact component={Message}></Route>
+                  <Route path='/study' exact component={Study}></Route>
+                  <Route path='/err' component={Err}></Route>
+                  <Redirect to='/err'></Redirect>
+                </Switch>
+              </Provider>
             </div>
             <div className="page__bottom">
-            ©Copyright Powered By Ricardo -- Ricardo 的个人博客 
+              ©Copyright Powered By Ricardo -- Ricardo 的个人博客
             </div>
           </div>
         </Router>

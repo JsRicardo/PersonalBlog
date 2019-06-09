@@ -1,26 +1,25 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import request from '../../helpers/request'
+import * as actions from '../../redux/actionCreator'
 import './style.css'
 
 class Article extends React.Component {
-  state = {
-    articleList: []
-  }
-
+  
   componentWillMount() {
     request('article', (articleList) => {
-      this.setState({
-        articleList
-      })
+      this.props.setArticleList(articleList)
     })
   }
 
   render() {
-    const { articleList } = this.state
+    const { articleList, nowPage, pageSize } = this.props
+    const showArticle = articleList.slice(nowPage, pageSize)
+    console.log(showArticle, nowPage, pageSize)
     return (
       <div>
         {
-          articleList.map((item, index) => {
+          showArticle.map((item, index) => {
             return (
               <div className='article' key={item + index}>
                 <a href="#" className='article__title'>{item.title}</a>
@@ -57,4 +56,11 @@ class Article extends React.Component {
   }
 }
 
-export default Article
+
+const mapStateToProp = (state) => {
+  const { articleList, nowPage, pageSize } = state
+  return { articleList, nowPage, pageSize }
+}
+
+
+export default connect(mapStateToProp, actions)(Article)

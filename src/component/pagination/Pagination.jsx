@@ -1,28 +1,25 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import Pagination from "react-js-pagination"
+import * as actions from '../../redux/actionCreator'
 import './style.css'
 
 class HOME extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      activePage: 1
-    };
-  }
 
   handlePageChange = (pageNumber) => {
     console.log(`active page is ${pageNumber}`);
-    this.setState({ activePage: pageNumber });
   }
 
   render() {
+    const { nowPage, count, pageSize } = this.props
+    const activePage = nowPage + 1
     return (
       <div className='pagenation__wrapper'>
         <Pagination
-          activePage={this.state.activePage}
-          itemsCountPerPage={10}
-          totalItemsCount={450}
-          pageRangeDisplayed={8}
+          activePage={activePage}
+          itemsCountPerPage={pageSize}
+          totalItemsCount={count}
+          pageRangeDisplayed={pageSize}
           onChange={this.handlePageChange}
           prevPageText={'<'}
           nextPageText={'>'}
@@ -32,4 +29,10 @@ class HOME extends React.Component {
   }
 }
 
-export default HOME
+const mapStateToProps = (state) => ({
+  nowPage: state.nowPage,
+  count: state.count,
+  pageSize: state.pageSize
+})
+
+export default connect(mapStateToProps, actions)(HOME)
