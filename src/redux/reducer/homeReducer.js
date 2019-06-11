@@ -1,9 +1,9 @@
-import * as Types from './actionTypes'
+import * as Types from '../actionTypes'
 
 const initState = {
-  articleList: [1],
+  articleList: [],
   nowPage: 0,
-  pageSize: 1,
+  pageSize: 5,
   count: 0
 }
 
@@ -15,6 +15,11 @@ export default function (state = initState, action) {
       newState.articleList = action.articleList
       newState.count = action.articleList.length + 1
       return newState
+
+    case Types.CHANGE_NOW_PAGE:
+      newState.nowPage = action.nowPage
+      return newState
+
     default:
       return state
   }

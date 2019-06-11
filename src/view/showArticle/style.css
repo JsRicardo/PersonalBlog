@@ -1,0 +1,30 @@
+.showArticle .article {
+  padding: 20px; }
+  .showArticle .article .article__title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px; }
+  .showArticle .article__detail {
+    padding: 0 20px;
+    margin-bottom: 30px; }
+    .showArticle .article__detail div {
+      font-size: 12px;
+      color: #748594;
+      line-height: 1.5;
+      display: inline-block;
+      margin-right: 20px; }
+      .showArticle .article__detail div:last-of-type {
+        margin: 0; }
+      .showArticle .article__detail div i {
+        height: 14px;
+        width: 14px;
+        display: inline-block;
+        margin-right: 4px; }
+    .showArticle .article__detail .detail__tag i {
+      background: #fff url("/source/icons/tag.png") 0 100%/contain no-repeat; }
+    .showArticle .article__detail .detail__time i {
+      background: #fff url("/source/icons/newsbg02.png") 0 100%/contain no-repeat; }
+    .showArticle .article__detail .detail__view i {
+      background: #fff url("/source/icons/newsbg04.png") 0 100%/contain no-repeat; }
+    .showArticle .article__detail .detail__zan i {
+      background: #fff url("/source/icons/zan-o.svg") 0 100%/contain no-repeat; }

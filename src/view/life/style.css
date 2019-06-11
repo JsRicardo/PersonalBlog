@@ -1,2 +1,11 @@
-* {
-  color: black; }
+.Life {
+  padding-top: 60px;
+  width: 100%; }
+  .Life__articleBar {
+    width: 66%; }
+  .Life__asside {
+    width: 32%; }
+  .Life__pagination {
+    width: 100%;
+    height: 40px;
+    margin-top: 40px; }

@@ -1,28 +1,25 @@
 import React from 'react'
-import { connect } from 'react-redux'
-import request from '../../helpers/request'
-import * as actions from '../../redux/actionCreator'
+import { Link } from "react-router-dom"
 import './style.css'
 
 class Article extends React.Component {
-  
-  componentWillMount() {
-    request('article', (articleList) => {
-      this.props.setArticleList(articleList)
-    })
-  }
 
   render() {
-    const { articleList, nowPage, pageSize } = this.props
-    const showArticle = articleList.slice(nowPage, pageSize)
-    console.log(showArticle, nowPage, pageSize)
+    const { articleList, pageSize, nowPage } = this.props
+    const showArticle = articleList.slice(nowPage * pageSize, pageSize + nowPage * pageSize)
+
     return (
       <div>
         {
           showArticle.map((item, index) => {
             return (
               <div className='article' key={item + index}>
-                <a href="#" className='article__title'>{item.title}</a>
+                <Link to={
+                  {
+                    pathname: '/showArticle',
+                    state: { id: item.id }
+                  }
+                } className='article__title'>{item.title}</Link>
                 <div className="article__content">
                   <div className="content__img">
                     <img src={item.imgSrc} alt="" />
@@ -56,11 +53,4 @@ class Article extends React.Component {
   }
 }
 
-
-const mapStateToProp = (state) => {
-  const { articleList, nowPage, pageSize } = state
-  return { articleList, nowPage, pageSize }
-}
-
-
-export default connect(mapStateToProp, actions)(Article)
+export default Article

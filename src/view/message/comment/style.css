@@ -1,0 +1,35 @@
+.mesComment {
+  width: 100%; }
+  .mesComment h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 10px; }
+  .mesComment p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px; }
+    .mesComment p input {
+      color: #777;
+      padding: 5px 10px;
+      margin-right: 5px; }
+    .mesComment p span {
+      color: red; }
+  .mesComment #commentContent {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    box-sizing: border-box;
+    resize: none; }
+  .mesComment button {
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    float: right;
+    margin-top: 10px; }
+  .mesComment .clear {
+    clear: both; }

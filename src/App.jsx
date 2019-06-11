@@ -9,6 +9,7 @@ import Message from './view/message/Message'
 import Study from './view/study/Study'
 import Err from './view/Err'
 import Nav from './component/Nav/Nav'
+import ShowArticle from './view/showArticle/ShowArticle'
 
 import store from './redux/store'
 
@@ -31,6 +32,7 @@ class App extends React.Component {
                   <Route path='/life' exact component={Life}></Route>
                   <Route path='/message' exact component={Message}></Route>
                   <Route path='/study' exact component={Study}></Route>
+                  <Route path='/showArticle' exact component={ShowArticle}></Route>
                   <Route path='/err' component={Err}></Route>
                   <Redirect to='/err'></Redirect>
                 </Switch>

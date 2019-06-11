@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './style.css'
 
 class LinkBtn extends React.Component {
@@ -6,8 +7,8 @@ class LinkBtn extends React.Component {
     const { title } = this.props
     return (
       <div>
-        <a href="#" className='tohome linkBtn'>网站首页</a>
-        <a href="#" className='thisPage linkBtn'>{title}</a>
+        <Link to='/' className='tohome linkBtn'>网站首页</Link>
+        <span className='thisPage linkBtn'>{title}</span>
       </div>
     )
   }

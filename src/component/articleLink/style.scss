@@ -1,9 +1,10 @@
 .articleLink {
   width: 100%;
   box-sizing: border-box;
-  cursor: pointer;
-  &:not(:first-of-type){
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 15px;
+  &:last-of-type{
+    margin-bottom: 0;
   }
 
   &:hover .article__img {

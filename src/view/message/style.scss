@@ -2,9 +2,16 @@
   padding-top: 60px;
   width: 100%;
   .messageWrapper{
+    padding: 20px;
     width: 100%;
     background-color: #fff;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+  }
+  .sendComment{
     padding: 20px;
+    width: 100%;
+    background-color: #fff;
     box-sizing: border-box;
   }
 }

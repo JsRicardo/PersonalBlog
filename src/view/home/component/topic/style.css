@@ -26,4 +26,6 @@
     color: #fff;
     font-size: 16px;
     background-color: rgba(0, 0, 0, 0.7);
-    overflow: hidden; }
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }

@@ -5,3 +5,7 @@
     width: 66%; }
   .study__asside {
     width: 32%; }
+  .study__pagination {
+    width: 100%;
+    height: 40px;
+    margin-top: 40px; }

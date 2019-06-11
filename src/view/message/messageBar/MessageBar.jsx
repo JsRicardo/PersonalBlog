@@ -1,25 +1,47 @@
 import React from 'react'
+import request from '../../../helpers/request'
+import * as actions from '../../../redux/action/commentAction'
+import { connect } from 'react-redux'
 import './style.css'
 
 class MessageBar extends React.Component {
+
+  componentWillMount() {
+    request('comment', (comments) => {
+      this.props.setComments(comments)
+    })
+  }
+
   render() {
+    const comments = this.props.comments
     return (
-      <div className='messageBar'>
-        <div className="messageBar__avatar">
-          <img src="/source/images/default-avatar.jpg" alt="" />
-        </div>
-        <div className="messageBar__right">
-          <div className="right__top">
-            <h1 className='messageBar__username'>马云</h1>
-            <span className='messageBar__time'>2018-07-16</span>
-          </div>
-          <p className="messageBar__content">
-            小伙子不错，有前途！今后一定要来我们公司！阿萨德卢卡斯滴啊手机吊扇灯克拉斯等你哦给啊胡达拉斯可能都会 阿萨德好弄啊收到货。
-          </p>
-        </div>
+      <div>
+        {
+          comments.map((item, index) => {
+            return (
+              <div className='messageBar' key={item + index}>
+                <div className="messageBar__avatar">
+                  <img src="/source/images/default-avatar.jpg" alt="" />
+                </div>
+                <div className="messageBar__right">
+                  <div className="right__top">
+                    <h1 className='messageBar__username'>{item.user}</h1>
+                    <span className='messageBar__time'>{item.time}</span>
+                  </div>
+                  <p className="messageBar__content">{item.comment}</p>
+                </div>
+              </div>
+            )
+          })
+        }
       </div>
     )
   }
 }
 
-export default MessageBar
+const mapStateToProps = (state) => ({
+  comments: state.comment.comments
+})
+
+
+export default connect(mapStateToProps, actions)(MessageBar)

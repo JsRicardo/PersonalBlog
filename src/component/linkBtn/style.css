@@ -5,6 +5,7 @@
 .thisPage{
   background-color: #3a6ab5;
   color: #fff;
+  cursor:pointer;
 }
 .linkBtn{
   display: inline-block;
