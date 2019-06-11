@@ -17,7 +17,7 @@ class Topic extends React.Component {
                   state: { id: item.id }
                 }
               }
-                className='topic' style={{ background: "url('/source/images/computer.jpg') no-repeat", backgroundSize: 'cover' }}>
+                className='topic' style={{ background: `url('${item.imgSrc}') no-repeat`, backgroundSize: 'cover' }}>
                 <div className="topic__tag">慢生活</div>
                 <div className="topic__title">{item.title}</div>
               </Link>
