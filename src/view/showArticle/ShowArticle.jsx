@@ -54,7 +54,7 @@ class ShowArticle extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-  articleList: state.articleList
+  articleList: state.home.articleList
 })
 
 export default connect(mapStateToProps)(ShowArticle)

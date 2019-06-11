@@ -20,7 +20,7 @@ class App extends React.Component {
     return (
       <div className='app'>
         <Router>
-          <div>
+          <div className='appWrapper'>
             <div className='header'>
               <Nav></Nav>
             </div>
