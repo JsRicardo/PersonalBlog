@@ -15,7 +15,7 @@ class Life extends React.Component {
     const { pageSize, nowPage } = this.props
     return (
       <div className='Life'>
-        <PageBanner imgSrc={'/source/images/study_poster.jpg'} lTitle={'慢生活'} exp={'山中何事，松花酿酒，春水煎茶，愿得大逍遥。'} />
+        <PageBanner imgSrc={'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560253831294&di=8db69f0ba2c998bd3d42353c90915a66&imgtype=0&src=http%3A%2F%2Fpic.90sjimg.com%2Fback_pic%2Fqk%2Fback_origin_pic%2F00%2F03%2F77%2Fe0498a249c91bd8aee4888bd786152b3.jpg'} lTitle={'慢生活'} exp={'山中何事，松花酿酒，春水煎茶，愿得大逍遥。'} />
         <div className="mainWrapper">
           <div className="main">
             <Article articleList={articleList} pageSize={pageSize} nowPage={nowPage} />

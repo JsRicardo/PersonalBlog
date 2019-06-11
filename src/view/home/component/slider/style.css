@@ -39,3 +39,12 @@
 .posterSlideDots li button {
   display: none;
 }
+
+.imageSlider__img{
+  width: 100%;
+  height: 100%;
+}
+.imageSlider__item{
+  height: 440px !important;
+  width: 726px;
+}

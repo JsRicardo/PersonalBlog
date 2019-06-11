@@ -14,7 +14,7 @@ class ShowArticle extends React.Component {
 
     return (
       <div className="showArticle">
-        <PageBanner imgSrc={'/source/images/about_poster.jpg'} lTitle={showArticle.tag} exp={'江湖没什么好的，也就酒还行。'} />
+        <PageBanner imgSrc={'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560253953741&di=e32c75a78fbb4776c123bdc5e9d1ace8&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Fback_pic%2F05%2F13%2F08%2F47599d3ac5dc084.jpg'} lTitle={showArticle.tag} exp={'江湖没什么好的，也就酒还行。'} />
         <div className='mainWrapper'>
           <div className="main">
             <div className="article">

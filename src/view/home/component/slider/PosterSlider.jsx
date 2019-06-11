@@ -14,13 +14,13 @@ const PosterSlide = () => {
   return (
     <Slider {...settings}>
       <div className="imageSlider__item">
-        <img className="imageSlider__img" src="/source/images/banner01.jpg" alt="" />
+        <img className="imageSlider__img" src="http://www.yangqq.com/d/file/jstt/bj/2018-06-29/3f0b6da48a6fd4e626a021ff7bd0d74f.jpg" alt="" />
       </div>
       <div className="imageSlider__item">
-        <img className="imageSlider__img" src="/source/images/banner03.jpg" alt="" />
+        <img className="imageSlider__img" src="https://www.yangqq.com/skin/852/images/banner03.jpg" alt="" />
       </div>
       <div className="imageSlider__item">
-        <img className="imageSlider__img" src="/source/images/banner02.jpg" alt="" />
+        <img className="imageSlider__img" src="https://www.yangqq.com/skin/852/images/banner01.jpg" alt="" />
       </div>
     </Slider>
   )
