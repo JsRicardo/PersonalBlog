@@ -26,7 +26,7 @@ class Article extends React.Component {
                   </div>
                   <div className="right">
                     <p className="content__blog">
-                      {item.content}
+                      {item.synopsis}
                     </p>
                     <div className="content__detail">
                       <div className="detail__time">

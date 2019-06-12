@@ -5,7 +5,7 @@ import './style.css'
 class Topic extends React.Component {
   render() {
     const article = this.props.article
-    const lifeArticle = article.filter(item => item.type === 'life')
+    const lifeArticle = article.filter(item => item.type === 'life').slice(0, 2)
     return (
       <div>
         {

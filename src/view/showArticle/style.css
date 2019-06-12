@@ -28,3 +28,16 @@
       background: #fff url("/source/icons/newsbg04.png") 0 100%/contain no-repeat; }
     .showArticle .article__detail .detail__zan i {
       background: #fff url("/source/icons/zan-o.svg") 0 100%/contain no-repeat; }
+  .showArticle .article .article__content {
+    width: 100%;
+    display: block; }
+    .showArticle .article .article__content p {
+      background-color: #fff;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      line-height: 22px;
+      font-size: 16px;
+      text-indent: 34px;
+      letter-spacing: 1px;
+      color: #555; }

@@ -16,7 +16,7 @@
     justify-content: space-between; }
   .article .content__img {
     max-height: 170px;
-    width: 400px;
+    width: 210px;
     margin-right: 15px;
     overflow: hidden; }
     .article .content__img img {
@@ -24,15 +24,18 @@
       transition: all 0.6s ease; }
       .article .content__img img:hover {
         transform: scale(1.5); }
+  .article .right {
+    flex: 1; }
   .article .content__blog {
     font-size: 14px;
+    margin-top: 20px;
+    line-height: 16px;
+    height: 48px;
+    width: 100%;
     color: #566573;
     overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 16px;
-    margin-top: 20px;
-    height: 60px;
-    -webkit-line-clamp: 3; }
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis; }
   .article .content__detail {
     padding: 0 20px; }
     .article .content__detail div {
