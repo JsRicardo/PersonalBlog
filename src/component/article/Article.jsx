@@ -35,11 +35,11 @@ class Article extends React.Component {
                       </div>
                       <div className="detail__view">
                         <i></i>
-                        {item.view}
+                        {item.view}浏览
                       </div>
                       <div className="detail__zan">
                         <i></i>
-                        {item.zan}
+                        {item.zan}点赞
                       </div>
                     </div>
                   </div>

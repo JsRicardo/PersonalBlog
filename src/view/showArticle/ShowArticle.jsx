@@ -46,11 +46,11 @@ class ShowArticle extends React.Component {
                 </div>
                 <div className="detail__view">
                   <i></i>
-                  {showArticle.view}
+                  {showArticle.view}浏览
                 </div>
                 <div className="detail__zan">
                   <i></i>
-                  {showArticle.zan}
+                  {showArticle.zan}点赞
                 </div>
               </div>
               <div className="article__content" ref='articleContent'></div>
