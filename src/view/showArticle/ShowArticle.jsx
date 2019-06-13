@@ -53,6 +53,12 @@ class ShowArticle extends React.Component {
                   {showArticle.zan}点赞
                 </div>
               </div>
+              <div className="article__synopsis">
+                简介：
+                {
+                  showArticle.synopsis
+                }
+              </div>
               <div className="article__content" ref='articleContent'></div>
             </div>
           </div>
