@@ -29,6 +29,5 @@
   },
   "devDependencies": {
     "react-test-renderer": "^16.3.2"
-  },
-  "homepage": "./"
+  }
 }
