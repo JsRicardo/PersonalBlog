@@ -7,14 +7,14 @@ class Description extends React.Component {
       <div className='description'>
         <div className="imgbg"></div>
         <div className="avatar">
-          <img src="/source/images/avatar.jpg" alt=""/>  
+          <img src="http://f.jiangpaipinpai.com/img/caseimg/source/images/avatar.jpg" alt=""/>  
         </div> 
         <div className="description__wrapper">
           <h2 className="description__name">
             Ricardo.M.Lee
           </h2>
           <h4 className='description__job'>
-            Web前端开发工程师
+            前端开发工程师
           </h4>
           <p className="description__text">
             一个90后小伙，哦不，现在应该叫大叔了... <br />
