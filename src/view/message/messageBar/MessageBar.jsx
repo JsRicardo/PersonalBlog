@@ -21,7 +21,7 @@ class MessageBar extends React.Component {
             return (
               <div className='messageBar' key={item + index}>
                 <div className="messageBar__avatar">
-                  <img src="/source/images/default-avatar.jpg" alt="" />
+                  <img src="http://f.jiangpaipinpai.com/img/caseimg/blogImg/images/default-avatar.jpg" alt="" />
                 </div>
                 <div className="messageBar__right">
                   <div className="right__top">

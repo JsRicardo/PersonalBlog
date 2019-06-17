@@ -5,7 +5,7 @@
   .description .imgbg {
     height: 130px;
     width: 100%;
-    background: #fff url("http://f.jiangpaipinpai.com/img/caseimg/source/images/banner.png") no-repeat;
+    background: #fff url("http://f.jiangpaipinpai.com/img/caseimg/blogImg/images/banner.png") no-repeat;
     background-size: cover; }
   .description .avatar {
     height: 100px;
@@ -37,3 +37,21 @@
     line-height: 18px;
     text-align: left;
     text-indent: 29px; }
+  .description .link {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd; }
+    .description .link__logo {
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+      margin-right: 10px;
+      background: #fff url("http://f.jiangpaipinpai.com/img/caseimg/blogImg/github.png") no-repeat;
+      background-size: cover;
+      vertical-align: middle; }
+    .description .link__addr {
+      color: #595959;
+      font-size: 14px; }
+      .description .link__addr:hover {
+        color: #999; }

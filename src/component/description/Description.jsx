@@ -7,7 +7,7 @@ class Description extends React.Component {
       <div className='description'>
         <div className="imgbg"></div>
         <div className="avatar">
-          <img src="http://f.jiangpaipinpai.com/img/caseimg/source/images/avatar.jpg" alt=""/>  
+          <img src="http://f.jiangpaipinpai.com/img/caseimg/blogImg/images/avatar.jpg" alt=""/>  
         </div> 
         <div className="description__wrapper">
           <h2 className="description__name">
@@ -21,6 +21,10 @@ class Description extends React.Component {
             不过无所谓了，对于18年网络工程毕业的我来说，在前端这条路上还有很多路要走。
           </p>
         </div>    
+        <div className="link">
+          <span className="link__logo"></span>
+          <a href='https://github.com/JsRicardo' className="link__addr">https://github.com/JsRicardo</a>
+        </div>
       </div>
     )
   }
